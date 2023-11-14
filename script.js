@@ -13,37 +13,37 @@
 
 
 
+const wrapper = document.querySelector ('div.wrapper')
 
 
 for (let i = 1; i < 101; i++) {
 
+    const cardElement = document.createElement ('p');
+    cardElement.className = 'card';
+    
     if (i % 3 == 0 && i % 5 == 0) {
         console.log ('FizzBuzz')
+        cardElement.innerHTML = ('FizzBuzz')
+        
     }
 
     else if (i % 3 == 0) {
         console.log ('Fizz')
+        cardElement.innerHTML = ('Fizz')
     }
 
     else if (i % 5 == 0) {
         console.log ('Buzz')
+        cardElement.innerHTML = ('Buzz')
     }
 
     else {
         console.log (i)
+        cardElement.innerHTML = i
+        
     }
 
-    const wrapper = document.querySelector('div.wrapper');
 
-    const cardElement = document.createElement ('div')
-
-    cardElement.className = 'card';
-
-    const testo = document.createElement ('h2');
-
-    testo.innerHTML = i
-
-    cardElement.appendChild(testo);
 
     wrapper.appendChild (cardElement)
 }

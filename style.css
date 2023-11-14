@@ -7,6 +7,13 @@
     margin: 0 auto;
 }
 
+h1 { 
+    text-align: center;
+}
+
+
+
+
 .card {
     display: flex;
     
@@ -15,7 +22,13 @@
 
 
 .card {
-    padding: 10px;
+    padding: 5px;
+    width: calc(100% / 7);
+    height: calc(100% / 7);
     text-align: center;
-    margin: 2rem;
+
+}
+
+.blue {
+    background-color: #1389B2;
 }

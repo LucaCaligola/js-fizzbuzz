@@ -24,22 +24,27 @@ for (let i = 1; i < 101; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
         console.log ('FizzBuzz')
         cardElement.append('FizzBuzz')
+        cardElement.className += ' red'
+        console.log (cardElement.className)
         
     }
 
     else if (i % 3 == 0) {
         console.log ('Fizz')
         cardElement.append('Fizz')
+        cardElement.className += " green"
     }
 
     else if (i % 5 == 0) {
         console.log ('Buzz')
         cardElement.append('Buzz')
+        cardElement.className += " yellow"
     }
 
     else {
         console.log (i)
         cardElement.append(i)
+        cardElement.className += " blue"
         
         
     }
